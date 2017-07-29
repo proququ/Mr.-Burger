@@ -1,0 +1,61 @@
+.our-features__title {
+    margin: 0;
+    font-family: "Gagalin", "Arial", sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 64px;
+    color: #2f3234;
+}
+
+.our-features__list {
+    position: absolute;
+    max-width: 960px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.our-features__list {
+    padding: 0;
+    margin: 0;
+    margin-right: -20px;
+    list-style: none;
+    font-size: 0;
+}
+
+.our-features__item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    vertical-align: top;
+    text-align: center;
+    color: #2f3234;
+}
+
+.our-features__img {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 100px;
+}
+
+.our-features__pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.our-features__text-title {
+    font-family: "Lifehack", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.our-features__text {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}

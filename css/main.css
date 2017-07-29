@@ -1,0 +1,13 @@
+/*Настройки*/
+@import url("settings/normalize.css");
+@import url("settings/font.css");
+@import url("settings/general.css");
+@import url("settings/section.css");
+
+/*Секции*/
+@import url("sections/preview.css");
+@import url("sections/our-features.css");
+@import url("sections/review.css");
+
+/*Компоненты*/
+@import url("components/mini-map.css");

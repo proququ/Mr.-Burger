@@ -1,0 +1,51 @@
+.mini-map {
+    position: fixed;
+    right: 45px;
+    top: 90px;
+}
+
+.mini-map__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mini-map__item {
+    margin-bottom: 5px;
+}
+
+.mini-map__item:last-child {
+    margin-bottom: 0;
+}
+
+.mini-map__link {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.mini-map__link:hover {
+    border-color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.mini-map__link_active {
+    border-color: #ffffff;
+}
+
+.mini-map__decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
