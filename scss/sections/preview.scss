@@ -1,0 +1,49 @@
+.preview-container {
+    display: flex;
+    align-items: center
+}
+
+.preview-column {
+    width: 50%;
+    padding-right: 10px;
+    
+    &__pic {
+        width: 100%;
+    }
+    
+    &__slogan {
+        display: block;
+        text-align: left;
+        &_top {
+            margin-bottom: 20px;
+            font-family: "Gagalin", "Arial", sans-serif;
+            font-size: 72px;
+            line-height: 85px;
+            color: $yellow;
+        }
+        
+        &_bottom {
+            font-family: "Lifehack", "Arial", sans-serif;
+            font-size: 65px;
+            line-height: 60px;
+            color: #ffffff;
+        }
+    }
+}
+
+.scroll-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    &__link{
+        display: block;
+        width: 29px;
+        height: 14px;
+    }
+    
+    &__pic {
+        width: 100%;
+    }
+}
