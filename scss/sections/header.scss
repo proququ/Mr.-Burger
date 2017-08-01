@@ -38,7 +38,7 @@
             content: "";
             display: inline-block;
             @include circle (4px, #ffffff);
-            margin: 0 15px;
+            margin: 0 11px;
             vertical-align: middle;
         }
         
@@ -53,8 +53,13 @@
         text-transform: uppercase;
         text-decoration: none;
         color: #ffffff;
+        
+        &:hover {
+            text-decoration: underline;
+            color: $orange;
+            transition: 0.2s;
+        }
     }
-    
     
 }
 
