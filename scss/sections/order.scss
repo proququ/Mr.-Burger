@@ -1,0 +1,30 @@
+.order-form {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    widows: 100%;
+    transform: translateY(-50%);
+    
+    &__column {
+        display: flex;
+        flex-wrap: wrap;
+        width: 48%;
+    }
+    
+    &__half {
+        flex-basis: 50%;
+        
+    }
+    
+    &__full {
+        flex-basis: 100%;
+    }
+    
+    &__fourth {
+        flex-basis: 25%;
+    }
+}
+input, textarea {
+    width: 100%;
+}

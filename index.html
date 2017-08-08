@@ -13,7 +13,7 @@
     <div class="wrapper">
        
         <header class="header">
-            <div class="container header-container">
+            <div class="container container_header">
                 <div class="logo">
                     <img class="logo__pic" src="image/svg/logo.svg" alt="logo">
                 </div>
@@ -46,59 +46,73 @@
         <main class="main-content">
             
             <section class="section section_preview" id="preview">
-                <div class="container preview-container">
-                    <div class="preview-column">
-                        <img class="preview-column__pic" src="image/content/preview-burger.png" alt="">
+                <div class="container container_preview">
+                    <div class="preview-col">
+                        <img class="preview-col__pic" src="image/content/preview-burger.png" alt="">
                     </div>
-                    <div class="preview-column">
-                        <span class="preview-column__slogan preview-column__slogan_top">Мы делаем</span>
-                        <span class="preview-column__slogan preview-column__slogan_bottom">натуральные бургеры</span>
+                    <div class="preview-col">
+                        <span class="section-title section-title_preview">Мы делаем</span>
+                        <span class="preview-col__slogan">натуральные бургеры</span>
                     </div>
                         
                     <div class="scroll-btn">
                         <a class="scroll-btn__link" href="#features">
-                            <img class="scroll-btn__pic" src="image/svg/arrow-scroll.svg" alt="scroll arrow">
+                            <svg class="scroll-btn__pic">
+                                <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
+                            </svg> 
                         </a>
                     </div>
                 </div>
             </section>
 
             <section class="section section_features" id="features">
-                <div class="container features-container">
-                    <h1 class="features-title">Мы лучшие</h1>
+                <div class="container border-invis">
+                    <span class="section-title section-title_features">Мы лучшие</span>
                     <ul class="features-list">
                         <li class="features-item">
                             <div class="features-item__img">
-                                <img class="features-item__pic" src="image/svg/meat.svg" alt="Рулька">
+                                <svg class="features-item__pic meat-icon">
+                                    <use xlink:href="image/svg/sprite.svg#meat"></use>
+                                </svg>
                             </div>
-                            <h2 class="features-item__text-title">
-                                100% свежее мясо
-                            </h2>
-                            <p class="features-item__text">
-                                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
-                            </p>
+                            <div class="features-item__desc">
+                                <h2 class="features-item__text-title">
+                                    100% свежее мясо
+                                </h2>
+                                <p class="features-item__text">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                </p>
+                            </div>
                         </li>
                         <li class="features-item">
                             <div class="features-item__img">
-                                <img class="features-item__pic" src="image/svg/hand.svg" alt="Пятюня">
+                                <svg class="features-item__pic hand-icon">
+                                    <use xlink:href="image/svg/sprite.svg#hand"></use>
+                                </svg>
                             </div>
-                            <h2 class="features-item__text-title">
-                                Ручная сборка
-                            </h2>
-                            <p class="features-item__text">
-                                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
-                            </p>
+                            <div class="features-item__desc">
+                                <h2 class="features-item__text-title">
+                                    Ручная сборка
+                                </h2>
+                                <p class="features-item__text">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
+                                </p>
+                            </div>
                         </li>
                         <li class="features-item">
                             <div class="features-item__img">
-                                <img class="features-item__pic" src="image/svg/natural.svg" alt="Травка">
+                                <svg class="features-item__pic list-icon">
+                                    <use xlink:href="image/svg/sprite.svg#natural"></use>
+                                </svg>
                             </div>
-                            <h2 class="features-item__text-title">
-                                Натуральные ингредиенты
-                            </h2>
-                            <p class="features-item__text">
-                                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест
-                            </p>
+                            <div class="features-item__desc">
+                                <h2 class="features-item__text-title">
+                                    Натуральные ингредиенты
+                                </h2>
+                                <p class="features-item__text">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -106,20 +120,78 @@
 
             <section class="section section_product-preview">
                 <div class="container">
-
+                    
                 </div>
             </section>
 
             <section class="section section_team">
-                <div class="container">
-
+                <div class="mini-container">
+                    <section class="work-team">
+                        <span class="section-title section-title_team">Команда</span>
+                        <ul class="team-accord">
+                            <li class="team-accord__item">
+                                <a class="team-accord__name" href="#">Дэниэл Редклиф</a>
+                                <div class="team-accord__description">
+                                    <div class="team-accord__img">
+                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
+                                    </div>
+                                    <div class="team-accord__description-text">
+                                        <span class="team-accord__post">Оператор</span>
+                                        <p class="team-accord__part">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-accord__item">
+                                <a class="team-accord__name team-accord__active" href="#">Ричард Джеймс</a>
+                                <div class="team-accord__description">
+                                    <div class="team-accord__img">
+                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
+                                    </div>
+                                    <div class="team-accord__description-text">
+                                        <span class="team-accord__post">Оператор</span>
+                                        <p class="team-accord__part">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-accord__item">
+                                <a class="team-accord__name" href="#">Джейк Финн</a>
+                                <div class="team-accord__description">
+                                    <div class="team-accord__img">
+                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
+                                    </div>
+                                    <div class="team-accord__description-text">
+                                        <span class="team-accord__post">Оператор</span>
+                                        <p class="team-accord__part">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-accord__item">
+                                <a class="team-accord__name" href="#">Николай Иванов</a>
+                                <div class="team-accord__description">
+                                    <div class="team-accord__img">
+                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
+                                    </div>
+                                    <div class="team-accord__description-text">
+                                        <span class="team-accord__post">Оператор</span>
+                                        <p class="team-accord__part">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </section>
 
-            <section class="section section_menu">
-                <div class="container">
-
-                </div>
+            <section class="section section_menu border-invis">
+                <span class="section-title section-title_menu">Меню</span>
             </section>
 
             <section class="section section_review" id="#review">
@@ -224,9 +296,59 @@
             </section>
 
             <section class="section section_order-form">
-            <div class="container">
-
-            </div>
+                <div class="container border-invis">
+                    <span class="section-title section-title_order">Закажите доставку</span>
+                    <form class="order-form" action="" method="post">
+                        <div class="order-form__column">
+                            <label class="order-form__half">
+                                <span class="order-form__caption">Имя</span>
+                                <input type="text">
+                            </label>
+                            <label class="order-form__half">
+                                <span class="order-form__caption">Телефон</span>
+                                <input type="tel">
+                            </label>
+                            <label class="order-form__full">
+                                <span class="order-form__caption">Улица</span>
+                                <input type="text">
+                            </label>
+                            <label class="order-form__fourth">
+                                <span class="order-form__caption">Дом</span>
+                                <input type="text">
+                            </label>
+                            <label class="order-form__fourth">
+                                <span class="order-form__caption">Корпус</span>
+                                <input type="text">
+                            </label>
+                            <label class="order-form__fourth">
+                                <span class="order-form__caption">Квартира</span>
+                                <input type="text">
+                            </label>
+                            <label class="order-form__fourth">
+                                <span class="order-form__caption">Этаж</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="order-form__column">
+                            <label class="order-form__full">
+                                <span class="order-form__caption">Комментарий</span>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </label>
+                            <label>
+                                <input type="radio">
+                                <span class="order-form__caption">Потребуется сдача</span>
+                            </label>
+                            <label>
+                                <input type="radio">
+                                <span class="order-form__caption">Оплата по карте</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span class="order-form__caption">Не перезванивать</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
             </section>
 
             <section class="section section_contacts">

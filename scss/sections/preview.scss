@@ -1,15 +1,16 @@
-.preview-container {
+.container_preview {
     display: flex;
     align-items: center
 }
 
-.preview-column {
+.preview-col {
     width: 50%;
     padding-right: 10px;
-    margin-top: -90px;
+    margin-top: -80px;
     
     &:first-child {
-        margin-left: 15px;
+        margin-left: 23px;
+        margin-right: 10px;
     }
     
     &__pic {
@@ -19,21 +20,7 @@
     &__slogan {
         display: block;
         text-align: left;
-        &_top {
-            margin-top: 60px;
-            margin-bottom: 20px;
-            font-family: "Gagalin", "Arial", sans-serif;
-            font-size: 72px;
-            line-height: 85px;
-            color: $yellow;
-        }
-        
-        &_bottom {
-            font-family: "Lifehack", "Arial", sans-serif;
-            font-size: 65px;
-            line-height: 60px;
-            color: #ffffff;
-        }
+        @include mix-font("Lifehack", 65px, normal, 1, #ffffff);
     }
 }
 
@@ -42,14 +29,17 @@
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
     
     &__link{
         display: block;
         width: 29px;
-        height: 14px;
+        height: 15px;
     }
     
     &__pic {
         width: 100%;
+        height: 100%;
+        fill: #ffffff;
     }
 }

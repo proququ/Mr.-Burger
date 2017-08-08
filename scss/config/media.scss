@@ -1,0 +1,20 @@
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
+
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets {
+    @madia screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @madia screen and (max-width: $phones) {
+        @content;
+    }
+}

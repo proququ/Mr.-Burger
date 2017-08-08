@@ -1,0 +1,97 @@
+.mini-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    background-color: $team-bg;
+}
+
+.work-team {
+	width: 70%;
+    margin: 0 auto;
+    margin-top: 13%;
+}
+
+.team-accord {
+    
+    &__item {
+        margin-bottom: 20px;
+    }
+    
+    &__name {
+        display: inline-block;
+        margin-bottom: 3px;
+        vertical-align: middle;
+        @include mix-font("Gagalin", 14px, normal, 2, #ffffff);
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 9px;
+            height: 6px;
+            margin-right: 8px;
+            vertical-align: middle;
+            background-image: url("../image/svg/triangle.svg#triangle");
+            background-repeat: no-repeat;
+            
+        }
+    }
+    
+    &__description {
+        display: none;
+        align-items: center;
+    }
+    
+    &__img {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        margin-left: 17px;
+        margin-right: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    &__pic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 135%;
+
+    }
+    
+    &__post {
+        display: inline-block;
+        margin-bottom: 11px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.7;
+    }
+    
+    &__description-text {
+        margin-bottom: 16px;
+    }
+    
+    &__part {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    
+    &__active {
+        color: $yellow;
+        
+        &:before {
+            transform: rotate(180deg);
+        }
+        
+        +.team-accord__description {
+            display: flex;
+        }
+    }
+}
+

@@ -4,3 +4,11 @@
     border-radius: $width/2;
     background-color: $color;
 }
+
+@mixin mix-font($font-family, $font-size, $font-weight, $line-height, $color) {
+    font-family: $font-family, "Arial", sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color;
+}
