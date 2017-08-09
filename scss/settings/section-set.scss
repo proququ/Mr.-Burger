@@ -35,6 +35,7 @@
         &_menu {
             background-color: $section-menu;
             background-image: url("../image/bg/bg-section-5-1.jpg");
+            padding-top: 1px;
         }
     
         &_review {
@@ -43,7 +44,7 @@
     
         &_order-form {
             background-color: $section-order;
-            background-image: url("../image/bg/bg-section-6.jpg")
+            background-image: url("../image/bg/bg-section-6.jpg");
         }
     
         &_contacts {

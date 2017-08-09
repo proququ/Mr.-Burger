@@ -28,6 +28,7 @@ body {
     position: relative;
     width: 940px;
     height: 100%;
+    padding-top: 1px;
     margin: 0 auto;
 }
 
@@ -35,10 +36,6 @@ body {
     content: "";
     display: block;
     clear: both;
-}
-
-.border-invis {
-    border: 1px solid transparent;
 }
 
 ul {

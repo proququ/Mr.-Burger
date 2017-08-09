@@ -1,16 +1,17 @@
 .container_preview {
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: space-between;
 }
 
 .preview-col {
     width: 50%;
     padding-right: 10px;
-    margin-top: -80px;
+    margin-top: -82px;
     
     &:first-child {
-        margin-left: 23px;
-        margin-right: 10px;
+        margin-left: 18px;
+//        margin-right: 10px;
     }
     
     &__pic {

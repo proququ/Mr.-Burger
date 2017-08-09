@@ -3,18 +3,37 @@
     top: 50%;
     display: flex;
     justify-content: space-between;
-    widows: 100%;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 33px;
     transform: translateY(-50%);
     
     &__column {
+        width: calc(50% - 10px);
+    }
+    
+    &__row {
         display: flex;
-        flex-wrap: wrap;
-        width: 48%;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px;
+        
+        &_start {
+            justify-content: flex-start;
+            margin-bottom: 22px;
+            
+            &:last-child {
+                margin-top: 20px;
+            }
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     
     &__half {
-        flex-basis: 50%;
-        
+        flex-basis: calc(50% - 10px);
     }
     
     &__full {
@@ -22,9 +41,94 @@
     }
     
     &__fourth {
-        flex-basis: 25%;
+        flex-basis: calc(25% - 13px);
+    }
+    
+    &__caption {
+        display: block;
+        font-size: 14px;
+    }
+    
+    &__field, &__comment-field {
+        width: 100%;
+        height: 35px;
+        padding: 5px 10px;
+        margin-top: 5px;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        
+        &:focus {
+            border: 2px solid $orange;
+        }
+    }
+    
+    &__comment-field {
+        height: 108px;
+        resize: none;
+    }
+    
+    &__radio-btn, &__check-btn {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    &__radio-item, &__check {
+        display: none;
+    }
+    
+    &__radio-fake {
+        position: relative;
+        display: block;
+        margin-right: 8px;
+        @include circle(16px, #ffffff);
+    }
+    
+    &__radio-item:checked + &__radio-fake {
+        border: 1px solid $orange;
+    }
+    
+    &__radio-item:checked + .order-form__radio-fake:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        @include circle(7px, $orange);
+        transform: translate(-50%, -50%);
+    }
+    
+    &__check-fake {
+        position: relative;
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-color: #ffffff;
+    }
+    
+    &__check:checked + &__check-fake:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 11px;
+        height: 9px;
+        background: url("../image/icons/check.png") no-repeat center;
+        transform: translate(-50%, -50%);
     }
 }
-input, textarea {
-    width: 100%;
+
+.form-btn {
+    margin-right: 16px;
+    @include mix-font("Ubuntu", 13px, 500, 1, #ffffff);
+    border: none;
+}
+
+.clear-btn {
+    @include mix-font("Ubuntu", 13px, 500, 1, #ffffff);
+    border: none;
+    background-color: transparent;
 }

@@ -1,0 +1,84 @@
+.menu-accord {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 70%;
+    background-color: $team-bg;
+    
+    &__item {
+        display: flex;
+    }
+    
+    &__title {
+        width: 80px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+        &_bg1{background-image: url("../image/bg/bg-section-5-2.jpg")}
+        &_bg2{background-image: url("../image/bg/bg-section-5-3.jpg")}
+        &_bg3{background-image: url("../image/bg/bg-section-5-4.jpg")}
+    }
+    
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        background-color: $review-bg;
+        
+        &-text {
+            display: block;
+            @include mix-font("Gagalin", 40px, normal, 1.6, #ffffff);
+            text-transform: uppercase;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+        }
+    }
+    
+    &__desc {
+        display: none;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    &_active + .menu-accord__desc {
+        display: block;
+    }
+}
+//        &:after {
+//            content: "";
+//            position: absolute;
+//            top: 0;
+//            left: 0;
+//            right: 0;
+//            bottom: 0;
+//            z-index: 1;
+//            background-color: $review-bg;
+//            
+//        }
+//    }
+//    
+//    &__link {
+//        display: block;
+//        width: 80px;
+
+//        z-index: 2;
+//        transform: rotate(-90deg);
+//    }
+//    
+//    &__desc {
+//        display: none;
+//        padding: 60px 30px;
+//    }
+//    
+//    
+//    
+//}
+//

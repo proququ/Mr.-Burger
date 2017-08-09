@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 48%;
+    width: 49%;
     height: 100%;
     background-color: $team-bg;
 }
@@ -16,12 +16,12 @@
 .team-accord {
     
     &__item {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
     &__name {
         display: inline-block;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         vertical-align: middle;
         @include mix-font("Gagalin", 14px, normal, 2, #ffffff);
         text-transform: uppercase;
@@ -43,6 +43,7 @@
     &__description {
         display: none;
         align-items: center;
+        margin-bottom: 20px;
     }
     
     &__img {
@@ -82,7 +83,7 @@
         line-height: 1.7;
     }
     
-    &__active {
+    &_active {
         color: $yellow;
         
         &:before {

@@ -24,15 +24,24 @@
         line-height: 24px;
     }
     
-    &__phone {
+    &__phone-block {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    &__phone-pic {
         display: block;
+        width: 12px;
+        height: 11px;
+        margin-right: 8px;
+        fill: $orange;
+    }
+    
+    &__phone {
         font-size: 14px;
         line-height: 24px;
         font-weight: bold;
         color: $orange;
     }
-}
-
-.social-block {
-    text-align: right;
 }

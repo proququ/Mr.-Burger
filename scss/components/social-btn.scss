@@ -1,0 +1,29 @@
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    &__item {
+
+    }
+    
+    &__link {
+        display: block;
+        text-decoration: none;
+        width: 20px;
+        height: 20px;
+    }
+    
+    &__pic {
+        height: 100%;
+        width: 100%;
+        fill: #ffffff;
+        opacity: 0.3;
+    }
+    
+    &__link:hover .social-btn__pic {
+        opacity: 1;
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}

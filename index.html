@@ -23,19 +23,19 @@
                             <a class="menu__link" href="#features">О нас</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Бургеры</a>
+                            <a class="menu__link" href="#burgers">Бургеры</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Команда</a>
+                            <a class="menu__link" href="#team">Команда</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Меню</a>
+                            <a class="menu__link" href="#menu">Меню</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#review">Отзывы</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Контакты</a>
+                            <a class="menu__link" href="#contact">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,7 +51,7 @@
                         <img class="preview-col__pic" src="image/content/preview-burger.png" alt="">
                     </div>
                     <div class="preview-col">
-                        <span class="section-title section-title_preview">Мы делаем</span>
+                        <h1 class="section-title section-title_preview">Мы делаем</h1>
                         <span class="preview-col__slogan">натуральные бургеры</span>
                     </div>
                         
@@ -66,8 +66,8 @@
             </section>
 
             <section class="section section_features" id="features">
-                <div class="container border-invis">
-                    <span class="section-title section-title_features">Мы лучшие</span>
+                <div class="container">
+                    <h1 class="section-title section-title_features">Мы лучшие</h1>
                     <ul class="features-list">
                         <li class="features-item">
                             <div class="features-item__img">
@@ -118,16 +118,100 @@
                 </div>
             </section>
 
-            <section class="section section_product-preview">
-                <div class="container">
-                    
+            <section class="section section_product-preview" id="burgers">
+                <div class="container product-wrapper">
+                    <div class="product-body">
+                        <a class="slider-btn slider-btn_left" href="#">
+                            <svg class="slider-btn__pic">
+                                <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
+                            </svg> 
+                        </a>
+                        <div class="product-col">
+                            <img class="product-img" src="image/content/product-preview-burger.png" alt="Бургер">
+                            <div class="consist-btn">
+                                <a class="consist-btn__link" href="#">
+                                    <svg class="consist-btn__pic">
+                                        <use xlink:href="image/svg/sprite.svg#burger"></use>
+                                    </svg>
+                                    <span class="consist-btn__text">Состав</span>
+                                </a>
+                                <ul class="consist-list">
+                                    <li class="consist-list__item">
+                                        <svg class="consist-list__pic" style="fill: #e25028">
+                                            <use xlink:href="image/svg/sprite.svg#beef"></use>
+                                        </svg>
+                                        <span class="consist-list__name">Говядина</span>
+                                        <span class="consist-list__weight">300 г.</span>
+                                    </li>
+                                    <li class="consist-list__item">
+                                        <svg class="consist-list__pic" style="fill: #f8b43a">
+                                            <use xlink:href="image/svg/sprite.svg#buns"></use>
+                                        </svg>
+                                        <span class="consist-list__name">Булочки</span>
+                                        <span class="consist-list__weight">100 г.</span>
+                                    </li>
+                                    <li class="consist-list__item">
+                                        <svg class="consist-list__pic" style="fill: #8ac03e">
+                                            <use xlink:href="image/svg/sprite.svg#salad"></use>
+                                        </svg>
+                                        <span class="consist-list__name">Зелень</span>
+                                        <span class="consist-list__weight">70 г.</span>
+                                    </li>
+                                    <li class="consist-list__item">
+                                        <svg class="consist-list__pic" style="fill: #e25028">
+                                            <use xlink:href="image/svg/sprite.svg#sauce"></use>
+                                        </svg>
+                                        <span class="consist-list__name">Соус</span>
+                                        <span class="consist-list__weight">150 г.</span>
+                                    </li>
+                                    <li class="consist-list__item">
+                                        <svg class="consist-list__pic" style="fill: #8ac03e">
+                                            <use xlink:href="image/svg/sprite.svg#cucumber"></use>
+                                        </svg>
+                                        <span class="consist-list__name">Овощи</span>
+                                        <span class="consist-list__weight">200 г.</span>
+                                    </li>
+                                    <li class="consist-list__item">
+                                        <svg class="consist-list__pic" style="fill: #f8b43a">
+                                            <use xlink:href="image/svg/sprite.svg#cheese"></use>
+                                        </svg>
+                                        <span class="consist-list__name">Сыр</span>
+                                        <span class="consist-list__weight">80 г.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ccal-icon">
+                                <svg class="ccal-icon__pic">
+                                    <use xlink:href="image/svg/sprite.svg#kkal"></use>
+                                </svg>
+                                <span class="ccal-icon__text ccal-icon__text_absol">1200</span>
+                                <span class="ccal-icon__text">Ккал</span>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <h1 class="section-title section-title_product">Dark Beef Burger</h1>
+                            <p class="product-desc">
+                                Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                            </p>
+                            <div class="price-block">
+                                <span class="price-block__price">500</span>
+                                <span class="price-block__text">рублей</span>
+                                <a class="order-btn" href="#order">Заказать</a>
+                            </div>
+                        </div>
+                        <a class="slider-btn slider-btn_right" href="#">
+                            <svg class="slider-btn__pic">
+                                <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
+                            </svg> 
+                        </a>
+                    </div>
                 </div>
             </section>
 
-            <section class="section section_team">
+            <section class="section section_team" id="team">
                 <div class="mini-container">
                     <section class="work-team">
-                        <span class="section-title section-title_team">Команда</span>
+                        <h1 class="section-title section-title_team">Команда</h1>
                         <ul class="team-accord">
                             <li class="team-accord__item">
                                 <a class="team-accord__name" href="#">Дэниэл Редклиф</a>
@@ -144,7 +228,7 @@
                                 </div>
                             </li>
                             <li class="team-accord__item">
-                                <a class="team-accord__name team-accord__active" href="#">Ричард Джеймс</a>
+                                <a class="team-accord__name team-accord_active" href="#">Ричард Джеймс</a>
                                 <div class="team-accord__description">
                                     <div class="team-accord__img">
                                         <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
@@ -190,14 +274,54 @@
                 </div>
             </section>
 
-            <section class="section section_menu border-invis">
+            <section class="section section_menu" id="menu">
                 <span class="section-title section-title_menu">Меню</span>
+                    <ul class="menu-accord">
+                        <li class="menu-accord__item">
+                            <div class="menu-accord__title menu-accord__title_bg1 menu-accord_active">
+                                <a href="" class="menu-accord__link">
+                                    <span class="menu-accord__link-text">Для мясоедов</span>
+                                </a>
+                            </div>
+                            <div class="menu-accord__desc">
+                                <p class="menu-accord__text">
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu-accord__item">
+                            <div class="menu-accord__title menu-accord__title_bg2">
+                                <a href="" class="menu-accord__link">
+                                    <span class="menu-accord__link-text">Вегетарианское</span>
+                                </a>
+                            </div>
+                            <div class="menu-accord__desc">
+                                <p class="menu-accord__text">
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu-accord__item">
+                            <div class="menu-accord__title menu-accord__title_bg3">
+                                <a href="" class="menu-accord__link">
+                                    <span class="menu-accord__link-text">Диетическое</span>
+                                </a>
+                            </div>
+                            <div class="menu-accord__desc">
+                                <p class="menu-accord__text">
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
             </section>
 
             <section class="section section_review" id="#review">
                 <ul class="review-list">
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img1"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg1.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -208,8 +332,7 @@
                             <a class="review-btn" href="">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img2"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg2.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -220,8 +343,7 @@
                             <a class="review-btn" href="">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img3"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg3.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -232,8 +354,7 @@
                                 <a class="review-btn" href="">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img4"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg4.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -244,8 +365,7 @@
                             <a class="review-btn" href="#">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img5"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg5.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -256,8 +376,7 @@
                             <a class="review-btn" href="">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img6"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg6.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -268,8 +387,7 @@
                             <a class="review-btn" href="">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img7"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg7.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -280,8 +398,7 @@
                             <a class="review-btn" href="">Подробнее</a>
                         </div>
                     </li>
-                    <li class="review-list__item">
-                        <div class="review-bg review-bg_img8"></div>
+                    <li class="review-list__item" style="background-image: url('image/content/review-bg8.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
                                 Константин Спилберг
@@ -295,67 +412,140 @@
                 </ul>
             </section>
 
-            <section class="section section_order-form">
-                <div class="container border-invis">
-                    <span class="section-title section-title_order">Закажите доставку</span>
-                    <form class="order-form" action="" method="post">
+            <section class="section section_order-form" id="order">
+                <div class="container">
+                    <h1 class="section-title section-title_order">Закажите доставку</h1>
+                    <form class="order-form" action="mysite.echo" method="post">
                         <div class="order-form__column">
-                            <label class="order-form__half">
-                                <span class="order-form__caption">Имя</span>
-                                <input type="text">
-                            </label>
-                            <label class="order-form__half">
-                                <span class="order-form__caption">Телефон</span>
-                                <input type="tel">
-                            </label>
-                            <label class="order-form__full">
-                                <span class="order-form__caption">Улица</span>
-                                <input type="text">
-                            </label>
-                            <label class="order-form__fourth">
-                                <span class="order-form__caption">Дом</span>
-                                <input type="text">
-                            </label>
-                            <label class="order-form__fourth">
-                                <span class="order-form__caption">Корпус</span>
-                                <input type="text">
-                            </label>
-                            <label class="order-form__fourth">
-                                <span class="order-form__caption">Квартира</span>
-                                <input type="text">
-                            </label>
-                            <label class="order-form__fourth">
-                                <span class="order-form__caption">Этаж</span>
-                                <input type="text">
-                            </label>
+                            <div class="order-form__row">
+                                <label class="order-form__half">
+                                    <span class="order-form__caption">Имя</span>
+                                    <input class="order-form__field" type="text">
+                                </label>
+                                <label class="order-form__half">
+                                    <span class="order-form__caption">Телефон</span>
+                                    <input class="order-form__field" type="tel">
+                                </label>
+                            </div>
+                            
+                            <div class="order-form__row">
+                                <label class="order-form__full">
+                                    <span class="order-form__caption">Улица</span>
+                                    <input class="order-form__field" type="text">
+                                </label>
+                            </div>
+                            
+                            <div class="order-form__row">
+                                <label class="order-form__fourth">
+                                    <span class="order-form__caption">Дом</span>
+                                    <input class="order-form__field" type="text">
+                                </label>
+                                <label class="order-form__fourth">
+                                    <span class="order-form__caption">Корпус</span>
+                                    <input class="order-form__field" type="text">
+                                </label>
+                                <label class="order-form__fourth">
+                                    <span class="order-form__caption">Квартира</span>
+                                    <input class="order-form__field" type="text">
+                                </label>
+                                <label class="order-form__fourth">
+                                    <span class="order-form__caption">Этаж</span>
+                                    <input class="order-form__field" type="text">
+                                </label>
+                            </div>
                         </div>
                         <div class="order-form__column">
-                            <label class="order-form__full">
-                                <span class="order-form__caption">Комментарий</span>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                            </label>
-                            <label>
-                                <input type="radio">
-                                <span class="order-form__caption">Потребуется сдача</span>
-                            </label>
-                            <label>
-                                <input type="radio">
-                                <span class="order-form__caption">Оплата по карте</span>
-                            </label>
-                            <label>
-                                <input type="checkbox">
-                                <span class="order-form__caption">Не перезванивать</span>
-                            </label>
+                            <div class="order-form__row">
+                                <label class="order-form__full">
+                                    <span class="order-form__caption">Комментарий</span>
+                                    <textarea class="order-form__comment-field" name="comment-field"></textarea>
+                                </label>
+                            </div>
+                            
+                            <div class="order-form__row order-form__row_start">
+                                <label class="order-form__radio-btn">
+                                    <input class="order-form__radio-item" type="radio" name="form-pay" value="cash">
+                                    <span class="order-form__radio-fake"></span>
+                                    <span class="order-form__caption">Потребуется сдача</span>
+                                </label>
+                                <label class="order-form__radio-btn">
+                                    <input class="order-form__radio-item" type="radio" name="form-pay" value="card" checked>
+                                    <span class="order-form__radio-fake"></span>
+                                    <span class="order-form__caption">Оплата по карте</span>
+                                </label>
+                            </div>
+                            <div class="order-form__row">
+                                <label class="order-form__check-btn">
+                                    <input class="order-form__check" type="checkbox" name="call-check" value="dont-call">
+                                    <span class="order-form__check-fake"></span>
+                                    <span class="order-form__caption">Не перезванивать</span>
+                                </label>
+                            </div>
+                            <div class="order-form__row order-form__row_start">
+                                <button class="order-btn form-btn" type="submit">Заказать</button>
+                                <button class="clear-btn" type="reset">Очистить</button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </section>
 
-            <section class="section section_contacts">
+            <section class="section section_contacts" id="contact">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33a65c3d40d99248e67c41e05d678c4252b3e2e7c84ca56fd00cb0f184c5d8c0&amp;width=100%25&amp;min-height=650&amp;lang=ru_RU&amp;scroll=false"></script>    
             </section>
 
         </main> 
+        
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="contact-block">
+                    <span class="contact-block__address">
+                        Санкт-Петербург, ул. Бабушкина, д. 12/1, 15
+                    </span>
+                    <a class="contact-block__phone-block" href="tel:+78123771377">
+                        <svg class="contact-block__phone-pic">
+                            <use xlink:href="image/svg/sprite.svg#phone"></use>
+                        </svg>
+                        <span class="contact-block__phone">
+                            +7 (812) 377-13-77
+                        </span>
+                    </a>
+
+                </div>
+                <div class="social-block">
+                    <ul class="social-btn">
+                        <li class="social-btn__item">
+                            <a href="" class="social-btn__link">
+                                <svg class="social-btn__pic">
+                                    <use xlink:href="image/svg/sprite.svg#vk"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-btn__item">
+                            <a href="" class="social-btn__link">
+                                <svg class="social-btn__pic">
+                                    <use xlink:href="image/svg/sprite.svg#fb"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-btn__item">
+                            <a href="" class="social-btn__link">
+                                <svg class="social-btn__pic">
+                                    <use xlink:href="image/svg/sprite.svg#inst"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-btn__item">
+                            <a href="" class="social-btn__link">
+                                <svg class="social-btn__pic">
+                                    <use xlink:href="image/svg/sprite.svg#twitter"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>  
         
         <aside class="mini-map">
             <ul class="mini-map__list">
@@ -370,58 +560,37 @@
                     </a>
                 </li>
                 <li class="mini-map__item">
-                    <a class="mini-map__link" href="#">
+                    <a class="mini-map__link" href="#burgers">
                         <span class="mini-map__decor"></span>
                     </a>
                 </li>
                 <li class="mini-map__item">
-                    <a class="mini-map__link" href="#">
+                    <a class="mini-map__link" href="#team">
                         <span class="mini-map__decor"></span>
                     </a>
                 </li>
                 <li class="mini-map__item">
-                    <a class="mini-map__link" href="#">
+                    <a class="mini-map__link" href="#menu">
                         <span class="mini-map__decor"></span>
                     </a>
                 </li>
                 <li class="mini-map__item">
-                    <a class="mini-map__link" href="#">
+                    <a class="mini-map__link" href="#review">
                         <span class="mini-map__decor"></span>
                     </a>
                 </li>
                 <li class="mini-map__item">
-                    <a class="mini-map__link" href="#">
+                    <a class="mini-map__link" href="#order">
                     <span class="mini-map__decor"></span>
                     </a>
                 </li>
                 <li class="mini-map__item">
-                    <a class="mini-map__link" href="#">
+                    <a class="mini-map__link" href="#contact">
                         <span class="mini-map__decor"></span>
                     </a>
                 </li>
             </ul>
         </aside>
-        
-        <footer class="footer">
-            <div class="container footer-container">
-                <div class="contact-block">
-                    <span class="contact-block__address">
-                        Санкт-Петербург, ул. Бабушкина, д. 12/1, 15
-                    </span>
-                    <span class="contact-block__phone">
-                        +7 (812) 377-13-77
-                    </span>
-                </div>
-                <div class="social-block">
-                    <span class="contact-block__address">
-                        Санкт-Петербург, ул. Бабушкина, д. 12/1, 15
-                    </span>
-                    <span class="contact-block__phone">
-                        +7 (812) 377-13-77
-                    </span>
-                </div>
-            </div>
-        </footer>  
         
     </div>
     
