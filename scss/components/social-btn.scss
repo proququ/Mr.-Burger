@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 140px;
+    width: rem(140px);
     &__item {
 
     }
@@ -10,8 +10,8 @@
     &__link {
         display: block;
         text-decoration: none;
-        width: 20px;
-        height: 20px;
+        width: rem(20px);
+        height: rem(20px);
     }
     
     &__pic {

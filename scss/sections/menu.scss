@@ -7,13 +7,17 @@
     justify-content: flex-end;
     max-width: 70%;
     background-color: $team-bg;
+
+    @include tablets {
+        max-width: 100%;
+    }
     
     &__item {
         display: flex;
     }
     
     &__title {
-        width: 80px;
+        width: rem(80px);
         height: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -34,51 +38,33 @@
         
         &-text {
             display: block;
-            @include mix-font("Gagalin", 40px, normal, 1.6, #ffffff);
+            @include mix-font("Gagalin", rem(40px), normal, 1.6, #ffffff);
             text-transform: uppercase;
             white-space: nowrap;
             transform: rotate(-90deg);
+
+            @include tablets {
+                align-self: flex-end;
+                width: rem(60px);
+                margin-bottom: rem(35px);
+            }
+
+            @include phones {
+                align-self: flex-end;
+                margin-bottom: rem(60px);
+                margin-right: rem(10px);
+            }
         }
     }
     
     &__desc {
         display: none;
-        padding-top: 60px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-top: rem(60px);
+        padding-left: rem(30px);
+        padding-right: rem(30px);
     }
     
     &_active + .menu-accord__desc {
         display: block;
     }
 }
-//        &:after {
-//            content: "";
-//            position: absolute;
-//            top: 0;
-//            left: 0;
-//            right: 0;
-//            bottom: 0;
-//            z-index: 1;
-//            background-color: $review-bg;
-//            
-//        }
-//    }
-//    
-//    &__link {
-//        display: block;
-//        width: 80px;
-
-//        z-index: 2;
-//        transform: rotate(-90deg);
-//    }
-//    
-//    &__desc {
-//        display: none;
-//        padding: 60px 30px;
-//    }
-//    
-//    
-//    
-//}
-//

@@ -1,7 +1,7 @@
 //Config
+@import "config/media";
 @import "config/var";
 @import "config/mixins";
-@import "config/media";
 
 //Settings
 @import "settings/fonts";
@@ -22,4 +22,4 @@
 //Components
 @import "components/section-title";
 @import "components/mini-map";
-@import "components/social-btn"
+@import "components/social-btn";

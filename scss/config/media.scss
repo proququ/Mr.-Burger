@@ -3,18 +3,18 @@
 }
 
 $desktop: 1200px;
-$laptop: 992px;
+// $laptop: 992px;
 $tablets: 768px;
 $phones: 480px;
 
 @mixin tablets {
-    @madia screen and (max-width: $tablets) {
+    @media screen and (max-width: $tablets) {
         @content;
     }
 }
 
 @mixin phones {
-    @madia screen and (max-width: $phones) {
+    @media screen and (max-width: $phones) {
         @content;
     }
 }

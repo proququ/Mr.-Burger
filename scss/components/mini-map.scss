@@ -1,11 +1,15 @@
 .mini-map {
     position: fixed;
-    right: 35px;
-    top: 90px;
+    right: rem(45px);
+    top: rem(90px);
     z-index: 20;
 
+    @include tablets {
+        display: none;
+    }
+
     &__item {
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
         
         &:last-child {
             margin-bottom: 0;
@@ -15,8 +19,8 @@
     &__link {
         position: relative;
         display: block;
-        @include circle(16px, none);
-        border: 1px solid transparent;
+        @include circle(rem(16px), none);
+        border: rem(1px) solid transparent;
         
         &:hover {
             border-color: #ffffff;
@@ -33,7 +37,7 @@
         top: 50%;
         left: 50%;
         display: block;
-        @include circle(6px, #ffffff);
+        @include circle(rem(6px), #ffffff);
         transform: translate(-50%, -50%);
     }
 }

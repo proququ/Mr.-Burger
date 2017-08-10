@@ -2,16 +2,37 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .preview-col {
     width: 50%;
-    padding-right: 10px;
-    margin-top: -82px;
+    padding-right: rem(10px);
+    margin-top: rem(-82px);
+
+    @include tablets {
+        width: 64%;
+    }
+
+    @include phones {
+        width: 82%;
+    }
     
     &:first-child {
-        margin-left: 18px;
-//        margin-right: 10px;
+        margin-left: rem(18px);
+
+         @include tablets {
+            padding-top: rem(15px);
+            margin-bottom: rem(35px);
+         }
+
+         @include phones {
+            margin-top: rem(-25px);
+         }
     }
     
     &__pic {
@@ -21,21 +42,31 @@
     &__slogan {
         display: block;
         text-align: left;
-        @include mix-font("Lifehack", 65px, normal, 1, #ffffff);
+        @include mix-font("Lifehack", rem(65px), normal, 1, #ffffff);
+
+        @include tablets {
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        @include phones {
+            font-size: 54px;
+            line-height: 1.1,
+        }
     }
 }
 
 .scroll-btn {
     position: absolute;
-    bottom: 40px;
+    bottom: rem(40px);
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     
     &__link{
         display: block;
-        width: 29px;
-        height: 15px;
+        width: rem(29px);
+        height: rem(15px);
     }
     
     &__pic {

@@ -40,6 +40,11 @@
                     </ul>
                 </nav>
                 <a class="order-btn" href="#">Заказать</a>
+                <a class="hamburger-menu-btn" href="#">
+                    <span class="hamburger-menu__decor"></span>
+                    <span class="hamburger-menu__decor"></span>
+                    <span class="hamburger-menu__decor"></span>
+                </a>
             </div>
         </header>
         
@@ -120,12 +125,12 @@
 
             <section class="section section_product-preview" id="burgers">
                 <div class="container product-wrapper">
+                    <a class="slider-btn slider-btn_left" href="#">
+                        <svg class="slider-btn__pic">
+                            <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
+                        </svg> 
+                    </a>
                     <div class="product-body">
-                        <a class="slider-btn slider-btn_left" href="#">
-                            <svg class="slider-btn__pic">
-                                <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
-                            </svg> 
-                        </a>
                         <div class="product-col">
                             <img class="product-img" src="image/content/product-preview-burger.png" alt="Бургер">
                             <div class="consist-btn">
@@ -199,12 +204,12 @@
                                 <a class="order-btn" href="#order">Заказать</a>
                             </div>
                         </div>
-                        <a class="slider-btn slider-btn_right" href="#">
-                            <svg class="slider-btn__pic">
-                                <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
-                            </svg> 
-                        </a>
                     </div>
+                    <a class="slider-btn slider-btn_right" href="#">
+                        <svg class="slider-btn__pic">
+                            <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
+                        </svg> 
+                    </a>
                 </div>
             </section>
 
@@ -278,7 +283,8 @@
                 <span class="section-title section-title_menu">Меню</span>
                     <ul class="menu-accord">
                         <li class="menu-accord__item">
-                            <div class="menu-accord__title menu-accord__title_bg1 menu-accord_active">
+                            <div class="menu-accord__title menu-accord__title_bg1">
+                                <!--menu-accord_active-->
                                 <a href="" class="menu-accord__link">
                                     <span class="menu-accord__link-text">Для мясоедов</span>
                                 </a>

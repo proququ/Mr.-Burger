@@ -8,8 +8,8 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 480px;
-    margin-top: 7px;
+    height: rem(480px);
+    margin-top: rem(7px);
 }
 
 .product-col {
@@ -19,19 +19,19 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: calc(50% - 10px);
+    flex: 1;
     
-    &:nth-child(3) {
+    &:last-child {
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: -10px;
-        margin-left: 20px;
+        margin-top: rem(-10px);
+        margin-left: rem(20px);
     }
 }
 
 .product-img {
     width: 108%;
-    margin-left: -10px;
+    margin-left: rem(-10px);
 }
 
 .consist-btn {
@@ -46,30 +46,34 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 12px 22px;
-        border-radius: 5px;
+        padding: rem(12px) rem(22px);
+        border-radius: rem(5px);
         text-decoration: none;
         background-color: $d-yellow;
+
+        &:hover {
+            background-color: $red;
+        }
     }
     
     &__pic {
-        width: 46px;
-        height: 44px;
-        margin-bottom: 10px;
+        width: rem(46px);
+        height: rem(44px);
+        margin-bottom: rem(10px);
         fill: #ffffff;
     }
     
     &__text {
-        @include mix-font("Gagalin", 14px, normal, 1, #ffffff);
+        @include mix-font("Gagalin", rem(14px), normal, 1, #ffffff);
         text-transform: uppercase;
     }
 }
 
 .consist-list {
     display: none;
-    width: 270px;
-    padding: 20px;
-    border-radius: 5px;
+    width: rem(270px);
+    padding: rem(20px);
+    border-radius: rem(5px);
     background-color: rgba(#ffffff, 0.9);
 
     &__item {
@@ -77,9 +81,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: rem(10px);
         color: $gray;
-        font-size: 14px;
+        font-size: rem(14px);
         
         &:last-child {
             margin-bottom: 0;
@@ -87,9 +91,9 @@
     }
     
     &__pic {
-        width: 44px;
-        height: 40px;
-        margin-right: 25px;
+        width: rem(44px);
+        height: rem(40px);
+        margin-right: rem(25px);
     }
     
     &__name {
@@ -109,64 +113,74 @@
     opacity: 0.5;
     
     &__pic {
-        width: 60px;
-        height: 60px;
+        width: rem(60px);
+        height: rem(60px);
         fill: #ffffff;
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
     }
     
     &__text {
-        @include mix-font("Gagalin", 14px, normal, 1, #ffffff);
+        @include mix-font("Gagalin", rem(14px), normal, 1, #ffffff);
         
         &_absol {
             position: absolute;
             top: 50%;
             left: 50%;
-            font-size: 20px;
+            font-size: rem(20px);
             transform: translate(-50%, -50%);
         }
+    }
+}
+
+.consist-btn__link_active {
+    background-color: $red;
+
+    & + .consist-list {
+    display: block;
     }
 }
 
 .price-block {
     display: flex;
     align-items: flex-end;
-    margin-top: 26px;
+    margin-top: rem(26px);
     
     &__price, &__text {
-        @include mix-font("Gagalin", 30px, normal, 1, $red);
+        @include mix-font("Gagalin", rem(30px), normal, 1, $red);
     }
     
     &__price {
-        font-size: 72px;
-        margin-right: 0px;
+        font-size: rem(72px);
+        margin-right: rem(0px);
     }
     
     &__text {
-        margin-bottom: 5px;
-        margin-right: 22px;  
+        margin-bottom: rem(5px);
+        margin-right: rem(22px);  
     }
 }
 
 .slider-btn {
     position: absolute;
-    top: 0;
+    top: 0px;
     bottom: 0;
+    z-index: 10;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    width: 60px;
-    z-index: 10;
+    width: rem(60px);
+
+
     
     &__pic {
-        width: 29px;
-        height: 16px;
+        width: rem(29px);
+        height: rem(16px);
         fill: #ffffff;
     }
     
     &_left {
-        left: -75px;
+        left: rem(-56px);
         
         .slider-btn__pic {
             transform: rotate(90deg);
@@ -174,7 +188,7 @@
     }
     
     &_right {
-        right: -45px;
+        right: rem(-55px);
         
         .slider-btn__pic {
             transform: rotate(-90deg);

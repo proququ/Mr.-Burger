@@ -5,25 +5,55 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin-top: 33px;
+    margin-top: rem(33px);
     transform: translateY(-50%);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem(45px);
+    }
+
+    @include phones {
+        margin-top: rem(53px);
+    } 
     
     &__column {
-        width: calc(50% - 10px);
+        width: calc(50% - 0.625rem);
+
+        @include tablets {
+            width: 65%;
+
+            &:first-child {
+                margin-bottom: rem(18px);
+            }
+        }
+
+        @include phones {
+            width: 100%;
+        }
     }
     
     &__row {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
         
         &_start {
             justify-content: flex-start;
-            margin-bottom: 22px;
-            
+            margin-bottom: rem(22px);
+
             &:last-child {
-                margin-top: 20px;
+                margin-top: rem(20px);
+
+                @include tablets {
+                    margin-top: rem(40px);
+                }
+            }
+
+            @include phones {
+                justify-content: center;
             }
         }
         
@@ -33,7 +63,11 @@
     }
     
     &__half {
-        flex-basis: calc(50% - 10px);
+        flex-basis: calc(50% - 0.625rem);
+
+        @include phones {
+            flex-basis: calc(50% - 0.325rem);
+        }
     }
     
     &__full {
@@ -41,37 +75,45 @@
     }
     
     &__fourth {
-        flex-basis: calc(25% - 13px);
+        flex-basis: calc(25% - 0.8125rem);
+
+        @include phones {
+            flex-basis: calc(33% - 0.4125rem);
+
+            &:last-child {
+                display: none;
+            }
+        }
     }
     
     &__caption {
         display: block;
-        font-size: 14px;
+        font-size: rem(14px);
     }
     
     &__field, &__comment-field {
         width: 100%;
-        height: 35px;
-        padding: 5px 10px;
-        margin-top: 5px;
+        height: rem(35px);
+        padding: rem(5px) rem(10px);
+        margin-top: rem(5px);
         outline: none;
         border: none;
-        border-radius: 7px;
+        border-radius: rem(7px);
         
         &:focus {
-            border: 2px solid $orange;
+            border: rem(2px) solid $orange;
         }
     }
     
     &__comment-field {
-        height: 108px;
+        height: rem(108px);
         resize: none;
     }
     
     &__radio-btn, &__check-btn {
         display: inline-flex;
         align-items: center;
-        margin-right: 20px;
+        margin-right: rem(20px);
     }
     
     &__radio-item, &__check {
@@ -81,12 +123,12 @@
     &__radio-fake {
         position: relative;
         display: block;
-        margin-right: 8px;
-        @include circle(16px, #ffffff);
+        margin-right: rem(8px);
+        @include circle(rem(16px), #ffffff);
     }
     
     &__radio-item:checked + &__radio-fake {
-        border: 1px solid $orange;
+        border: rem(1px) solid $orange;
     }
     
     &__radio-item:checked + .order-form__radio-fake:after {
@@ -95,16 +137,16 @@
         top: 50%;
         left: 50%;
         display: block;
-        @include circle(7px, $orange);
+        @include circle(rem(7px), $orange);
         transform: translate(-50%, -50%);
     }
     
     &__check-fake {
         position: relative;
         display: block;
-        width: 15px;
-        height: 15px;
-        margin-right: 10px;
+        width: rem(15px);
+        height: rem(15px);
+        margin-right: rem(10px);
         background-color: #ffffff;
     }
     
@@ -114,21 +156,21 @@
         top: 50%;
         left: 50%;
         display: block;
-        width: 11px;
-        height: 9px;
+        width: rem(11px);
+        height: rem(9px);
         background: url("../image/icons/check.png") no-repeat center;
         transform: translate(-50%, -50%);
     }
 }
 
 .form-btn {
-    margin-right: 16px;
-    @include mix-font("Ubuntu", 13px, 500, 1, #ffffff);
+    margin-right: rem(16px);
+    @include mix-font("Ubuntu", rem(13px), 500, 1.42, #ffffff);
     border: none;
 }
 
 .clear-btn {
-    @include mix-font("Ubuntu", 13px, 500, 1, #ffffff);
+    @include mix-font("Ubuntu", rem(13px), 500, 1, #ffffff);
     border: none;
     background-color: transparent;
 }
