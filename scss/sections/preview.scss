@@ -1,7 +1,6 @@
 .container_preview {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     @include tablets {
         flex-direction: column;
@@ -9,64 +8,64 @@
     }
 }
 
-.preview-col {
-    width: 50%;
-    padding-right: rem(10px);
-    margin-top: rem(-82px);
-
-    @include tablets {
-        width: 64%;
-    }
-
-    @include phones {
-        width: 82%;
-    }
+.preview-img, .preview-text {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
     
-    &:first-child {
-        margin-left: rem(18px);
+    @include tablets {
+        flex-basis: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
 
-         @include tablets {
-            padding-top: rem(15px);
-            margin-bottom: rem(35px);
-         }
-
-         @include phones {
-            margin-top: rem(-25px);
-         }
+.preview-img {
+    margin: rem(-87px) rem(13px) 0 rem(10px);
+    
+    @include tablets {
+        margin: rem(-100px) 0 0;
     }
     
     &__pic {
         width: 100%;
     }
+}
+
+.preview-text {
+    margin-top: rem(-20px);
+    
+    @include tablets {
+        margin-top: rem(25px);
+    }
     
     &__slogan {
         display: block;
-        text-align: left;
-        @include mix-font("Lifehack", rem(65px), normal, 1, #ffffff);
-
+        margin-top: rem(20px);
+        @include mix-font("Lifehack", 65px, normal, 1, #ffffff);
+        
         @include tablets {
-            padding-left: 20px;
-            text-align: center;
+            width: 95%;
+            margin-top: rem(25px);
         }
-
+        
         @include phones {
             font-size: 54px;
-            line-height: 1.1,
         }
     }
 }
 
 .scroll-btn {
     position: absolute;
-    bottom: rem(40px);
+    bottom: rem(42px);
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     
     &__link{
         display: block;
-        width: rem(29px);
-        height: rem(15px);
+        width: 29px;
+        height: 15px;
     }
     
     &__pic {

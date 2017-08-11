@@ -1,12 +1,12 @@
 html {
 
-    // @include tablets {
-    //     font-size: rem(15px);
-    // }
+     @include tablets {
+         font-size: rem(14px);
+     }
 
-    // @include phones {
-    //     font-size: rem(14px);
-    // }
+     @include phones {
+         font-size: rem(12px);
+     }
 }
 
 html {

@@ -1,45 +1,33 @@
 .section-title {
     display: block;
-    @include mix-font("Gagalin", rem(72px), normal, 1.18, none);
+    @include mix-font("Gagalin", 72px, normal, 1.18, none);
     text-transform: uppercase;
     
     &_preview {
-        margin-top: rem(60px);
-        margin-bottom: rem(20px);
         color: $yellow;
 
-        @include tablets {
-            text-align: center;
-            white-space: nowrap;
-        }
 
         @include phones {
-            margin-top: rem(73px);
-            margin-bottom: rem(0px);
-            margin-left: rem(10px);
-            font-size: rem(64px);
+            font-size: 64px;
         }
 
     }
     
     &_features {
-        margin-top: rem(60px);
+        margin-top: rem(58px);
         text-align: center;
         color: $gray;
 
-        @include tablets {
-            margin-top: rem(105px);
-        }
-
         @include phones {
-            margin-top: rem(43px);
-            font-size: rem(50px);
+            margin-top: rem(50px);
+            font-size: 50px;
         }
 
     }
     
     &_product {
-        margin-bottom: rem(42px);
+        margin-top: rem(-10px);
+        margin-bottom: rem(45px);
         line-height: 0.9;
     }
     
@@ -48,16 +36,16 @@
         margin-top: rem(70px);
         margin-bottom: rem(68px);
 
-        @include tablets {
-            margin-top: rem(103px);
-            margin-bottom: rem(109px);
-        }
-
-        @include phones {
-            margin-top: rem(52px);
-            margin-bottom: rem(80px);
-            font-size: rem(50px);
-        }
+//        @include tablets {
+//            margin-top: rem(103px);
+//            margin-bottom: rem(109px);
+//        }
+//
+//        @include phones {
+//            margin-top: rem(52px);
+//            margin-bottom: rem(80px);
+//            font-size: rem(50px);
+//        }
     }
     
     &_menu {
@@ -66,13 +54,13 @@
         color: #ffffff;
 
         @include tablets {
-            margin-left: rem(25px);
-            margin-top: rem(95px);
+            margin-left: 25px;
+            margin-top: 95px;
         }
 
         @include phones {
-            margin-left: rem(60px);
-            margin-top: rem(44px);
+//            margin-left: rem(60px);
+//            margin-top: rem(44px);
             font-size: rem(50px);
         }
     }
@@ -82,13 +70,13 @@
         color: $yellow;
         text-align: center;
 
-        @include tablets {
-            margin-top: rem(103px);
-        }
-
-        @include phones {
-            margin-top: rem(54px);
-            font-size: rem(50px);
-        }
+//        @include tablets {
+//            margin-top: rem(103px);
+//        }
+//
+//        @include phones {
+//            margin-top: rem(54px);
+//            font-size: rem(50px);
+//        }
     }
 }

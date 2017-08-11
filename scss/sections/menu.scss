@@ -8,13 +8,9 @@
     max-width: 70%;
     background-color: $team-bg;
 
-    @include tablets {
-        max-width: 100%;
-    }
-    
-    &__item {
-        display: flex;
-    }
+//    @include tablets {
+//        max-width: 100%;
+//    }
     
     &__title {
         width: rem(80px);
@@ -26,6 +22,10 @@
         &_bg1{background-image: url("../image/bg/bg-section-5-2.jpg")}
         &_bg2{background-image: url("../image/bg/bg-section-5-3.jpg")}
         &_bg3{background-image: url("../image/bg/bg-section-5-4.jpg")}
+        
+        @include phones {
+            width: rem(60px);
+        }
     }
     
     &__link {
@@ -43,17 +43,17 @@
             white-space: nowrap;
             transform: rotate(-90deg);
 
-            @include tablets {
-                align-self: flex-end;
-                width: rem(60px);
-                margin-bottom: rem(35px);
-            }
-
-            @include phones {
-                align-self: flex-end;
-                margin-bottom: rem(60px);
-                margin-right: rem(10px);
-            }
+//            @include tablets {
+//                align-self: flex-end;
+//                width: rem(60px);
+//                margin-bottom: rem(35px);
+//            }
+//
+//            @include phones {
+//                align-self: flex-end;
+//                margin-bottom: rem(60px);
+//                margin-right: rem(10px);
+//            }
         }
     }
     
