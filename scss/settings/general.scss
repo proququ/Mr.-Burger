@@ -1,15 +1,4 @@
 html {
-
-     @include tablets {
-         font-size: rem(14px);
-     }
-
-     @include phones {
-         font-size: rem(12px);
-     }
-}
-
-html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -38,7 +27,7 @@ body {
     max-width: 940px;
     width: 95%;
     min-height: 100%;
-    padding-top: rem(1px);
+    padding-top: 1px;
     margin: 0 auto;
 }
 

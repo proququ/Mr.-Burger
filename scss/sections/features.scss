@@ -1,23 +1,24 @@
 .features-list {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    margin-top: rem(20px);
     transform: translate(-50%, -50%);
-
-//@include tablets {
-//        margin-top: 0;
-//    }
-//
-//    @include phones {
-//        flex-direction: column;
-//        align-items: center;
-//        margin-top: rem(10px);
-//    }
+    
+    @include tablets {
+        top: 49%;
+    }
+    
+    @include phones {
+        top: 47.5%;
+        left: 52.5%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
 }
 
 .features-item {
@@ -27,47 +28,68 @@
     align-items: center;
     text-align: center;
 
-//    @include phones {
-//        flex-direction: row;
-//        align-items: flex-start;
-//        justify-content: space-between;
-//        width: 100%;
-//        margin-bottom: rem(40px);
-//        text-align: left;
-//
-//        &::last-child {
-//            margin-bottom: 0;
-//        }
-//    }
+    @include phones {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: left;
+        
+        &:last-child {
+            margin-top: -5px;
+            margin-bottom: 0;
+        }
+    }
+    
+    @include minscreen {
+        margin-bottom: 20px;
+    }
     
     &__img {
         height: 87px;
         
-//        @include phones {
-//            flex-basis: 27%;
-//            margin-bottom: 0;
-//        }
+        @include phones {
+            flex-shrink: 0;
+            width: 100px;
+            margin-right: 25px;
+        }
+        
+        @include minscreen {
+            height: 60px;
+            width: 80px;
+            margin-right: 15px;
+        }
     }
     
     &__pic {
         height: 100%;
-    }
-
-    &__desc {
-//        @include phones {
-//            flex-basis: 70%;
-//            margin-left: auto;
-//        }
+        
+        @include phones {
+            width: 100%;
+        }
     }
 
     &__text-title {
         margin-top: 32px;
         margin-bottom: 14px;
         @include mix-font("Lifehack", 24px, 500, 1.17, $gray);
+        
+        @include phones {
+            margin-top: 0;
+        }
+        
+        @include minscreen {
+            font-size: 16px;
+        }
     }
 
     &__text {
         @include mix-font("Ubuntu", 14px, normal, 1.7, $gray);
+        
+        @include minscreen {
+            padding-right: 10px;
+            font-size: 12px;
+        }
     }
 }
 

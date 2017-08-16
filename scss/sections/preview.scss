@@ -14,17 +14,25 @@
     flex-direction: column;
     
     @include tablets {
-        flex-basis: 100%;
+        flex-basis: auto;
         align-items: center;
         text-align: center;
     }
 }
 
 .preview-img {
-    margin: rem(-87px) rem(13px) 0 rem(10px);
+    margin-right: 13px;
+    margin-left: 10px;
+    margin-bottom: 93px;
     
     @include tablets {
-        margin: rem(-100px) 0 0;
+        margin-bottom: 40px;
+    }
+    
+    @include phones {
+        width: 80%;
+        margin-right: 10px;
+        margin-bottom: 55px;
     }
     
     &__pic {
@@ -33,34 +41,48 @@
 }
 
 .preview-text {
-    margin-top: rem(-20px);
+    margin-top: -20px;
     
     @include tablets {
-        margin-top: rem(25px);
+        margin-bottom: 65px;
+    }
+    
+    @include phones {
+        margin-bottom: 10px;
     }
     
     &__slogan {
         display: block;
-        margin-top: rem(20px);
+        margin-top: 20px;
         @include mix-font("Lifehack", 65px, normal, 1, #ffffff);
         
         @include tablets {
             width: 95%;
-            margin-top: rem(25px);
+            margin-top: 20px;
         }
         
         @include phones {
+            margin-top: 5px;
             font-size: 54px;
+            line-height: 1.1;
+        }
+        
+        @include minscreen {
+            font-size: 30px;
         }
     }
 }
 
 .scroll-btn {
     position: absolute;
-    bottom: rem(42px);
+    bottom: 42px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    
+    @include phones {
+        bottom: 34px;
+    }
     
     &__link{
         display: block;

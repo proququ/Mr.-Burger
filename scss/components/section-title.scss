@@ -1,56 +1,91 @@
+//Общие стили заголовков
 .section-title {
     display: block;
     @include mix-font("Gagalin", 72px, normal, 1.18, none);
     text-transform: uppercase;
     
+//Заголовок первой секции
     &_preview {
         color: $yellow;
-
 
         @include phones {
             font-size: 64px;
         }
-
+        
+        @include minscreen {
+            font-size: 45px;
+        }
     }
     
+//Заголовок второй секции
     &_features {
-        margin-top: rem(58px);
+        margin-top: 58px;
         text-align: center;
         color: $gray;
-
+        
+        @include tablets {
+            margin-top: 103px;
+        }
+        
         @include phones {
-            margin-top: rem(50px);
+            margin-top: 45px;
             font-size: 50px;
         }
-
+        
+        @include minscreen {
+            margin-top: 30px;
+            font-size: 35px;
+        }
     }
     
+//Заголовок третьей секции    
     &_product {
-        margin-top: rem(-10px);
-        margin-bottom: rem(45px);
+        margin-bottom: 43px;
         line-height: 0.9;
+        
+        @include tablets {
+            width: 80%;
+            margin-bottom: 25px;
+        }
+        
+        @include phones {
+            font-size: 50px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        
+        @include minscreen {
+            font-size: 35px;
+        }
     }
     
+//Заголовок четвертой секции
     &_team {
         color: $yellow;
-        margin-top: rem(70px);
-        margin-bottom: rem(68px);
+        margin-bottom: 68px;
 
-//        @include tablets {
-//            margin-top: rem(103px);
-//            margin-bottom: rem(109px);
-//        }
-//
-//        @include phones {
-//            margin-top: rem(52px);
-//            margin-bottom: rem(80px);
-//            font-size: rem(50px);
-//        }
+        @include tablets {
+            margin-top: 103px;
+            margin-bottom: 109px;
+        }
+
+        @include phones {
+            margin-top: 52px;
+            margin-bottom: 80px;
+            font-size: 50px;
+        }
+        
+        @include minscreen {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 35px;
+        }
     }
     
+//Заголовок пятой секции
     &_menu {
-        margin-top: rem(90px);
-        margin-left: rem(95px);
+        margin-top: 90px;
+        margin-left: 95px;
         color: #ffffff;
 
         @include tablets {
@@ -59,24 +94,36 @@
         }
 
         @include phones {
-//            margin-left: rem(60px);
-//            margin-top: rem(44px);
-            font-size: rem(50px);
+            margin-left: 60px;
+            margin-top: 44px;
+            font-size: 50px;
+        }
+        
+        @include minscreen {
+            margin-left: 30px;
+            margin-top: 20px;
+            font-size: 35px;
         }
     }
     
+//Заголовок шестой секции
     &_order {
-        margin-top: rem(70px);
+        margin-top: 70px;
         color: $yellow;
         text-align: center;
 
-//        @include tablets {
-//            margin-top: rem(103px);
-//        }
-//
-//        @include phones {
-//            margin-top: rem(54px);
-//            font-size: rem(50px);
-//        }
+        @include tablets {
+            margin-top: 100px;
+        }
+
+        @include phones {
+            margin-top: 54px;
+            font-size: 50px;
+        }
+        
+        @include minscreen {
+            margin-top: 25px;
+            font-size: 35px;
+        }
     }
 }

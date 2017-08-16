@@ -40,11 +40,14 @@
                     </ul>
                 </nav>
                 <a class="order-btn" href="#">Заказать</a>
+                
+                <!--Скрытая кнопка меню - гамбургер-->
                 <a class="hamburger-menu-btn" href="#">
                     <span class="hamburger-menu__decor"></span>
                     <span class="hamburger-menu__decor"></span>
                     <span class="hamburger-menu__decor"></span>
                 </a>
+                
             </div>
         </header>
         
@@ -59,7 +62,6 @@
                         <h1 class="section-title section-title_preview">Мы делаем</h1>
                         <span class="preview-text__slogan">натуральные бургеры</span>
                     </div>
-                        
                     <div class="scroll-btn">
                         <a class="scroll-btn__link" href="#features">
                             <svg class="scroll-btn__pic">
@@ -69,11 +71,12 @@
                     </div>
                 </div>
             </section>
-
+            
             <section class="section section_features" id="features">
                 <div class="container">
                     <h1 class="section-title section-title_features">Мы лучшие</h1>
                     <ul class="features-list">
+                       
                         <li class="features-item">
                             <div class="features-item__img">
                                 <svg class="features-item__pic meat-icon">
@@ -89,6 +92,7 @@
                                 </p>
                             </div>
                         </li>
+                        
                         <li class="features-item">
                             <div class="features-item__img">
                                 <svg class="features-item__pic hand-icon">
@@ -104,6 +108,7 @@
                                 </p>
                             </div>
                         </li>
+                        
                         <li class="features-item">
                             <div class="features-item__img">
                                 <svg class="features-item__pic list-icon">
@@ -119,27 +124,31 @@
                                 </p>
                             </div>
                         </li>
+                        
                     </ul>
                 </div>
             </section>
 
             <section class="section section_product-preview" id="burgers">
                 <div class="container product-wrapper">
-                    <a class="slider-btn slider-btn_left" href="#">
-                        <svg class="slider-btn__pic">
-                            <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
-                        </svg> 
-                    </a>
+                   
                     <div class="product-body">
-                        <div class="product-img">
-                            <img class="product-img__pic" src="image/content/product-preview-burger.png" alt="Бургер">
-                            <div class="product-img__btn consist-btn">
+                                          
+                        <!--Основной контент слайдера-->
+                        <div class="product-body__col">
+                          
+                            <!--Основная картинка слайдера-->
+                            <img class="product-img" src="image/content/product-preview-burger.png" alt="Бургер">
+                           
+                            <!--Кнопка "Состав"-->
+                            <div class="consist-btn">
                                 <a class="consist-btn__link" href="#">
                                     <svg class="consist-btn__pic">
                                         <use xlink:href="image/svg/sprite.svg#burger"></use>
                                     </svg>
                                     <span class="consist-btn__text">Состав</span>
                                 </a>
+                                <!--Скрытый выпадающий список-->
                                 <ul class="consist-btn__list consist-list">
                                     <li class="consist-list__item">
                                         <svg class="consist-list__pic" style="fill: #e25028">
@@ -185,106 +194,126 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="product-img__icon ccal-icon">
+
+                            <!--Иконка "Количество ккал"-->
+                            <div class="ccal-icon">
                                 <svg class="ccal-icon__pic">
                                     <use xlink:href="image/svg/sprite.svg#kkal"></use>
                                 </svg>
                                 <span class="ccal-icon__text ccal-icon__text_absol">1200</span>
                                 <span class="ccal-icon__text">Ккал</span>
                             </div>
+                            
                         </div>
-                        <div class="product-text">
-                            <h1 class="section-title section-title_product">Dark Beef Burger</h1>
-                            <p class="product-text__desc">
-                                Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                            </p>
-                            <div class="product-text__price price-block">
-                                <span class="price-block__price">500</span>
-                                <span class="price-block__text">рублей</span>
-                                <a class="order-btn" href="#order">Заказать</a>
+                        
+                        <div class="product-body__col">
+                            <!--Текст слайдера-->
+                            <div class="product-text">
+                                <h1 class="section-title section-title_product">Dark Beef Burger</h1>
+                                <p class="product-text__desc">
+                                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                </p>
+                                <div class="product-text__price price-block">
+                                    <span class="price-block__price">500</span>
+                                    <span class="price-block__text">рублей</span>
+                                    <a class="order-btn" href="#order">Заказать</a>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
+                    
+                    <!--Боковые кнопки слайдера-->
+                    <!--Левая-->
+                    <a class="slider-btn slider-btn_left" href="#">
+                        <svg class="slider-btn__pic">
+                            <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
+                        </svg> 
+                    </a>
+                    <!--Правая-->
                     <a class="slider-btn slider-btn_right" href="#">
                         <svg class="slider-btn__pic">
                             <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
                         </svg> 
                     </a>
+                    
                 </div>
             </section>
 
             <section class="section section_team" id="team">
                 <div class="mini-container">
-                    <section class="work-team">
-                        <h1 class="section-title section-title_team">Команда</h1>
-                        <ul class="team-accord">
-                            <li class="team-accord__item">
-                                <a class="team-accord__name" href="#">Дэниэл Редклиф</a>
-                                <div class="team-accord__description">
-                                    <div class="team-accord__img">
-                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
-                                    </div>
-                                    <div class="team-accord__description-text">
-                                        <span class="team-accord__post">Оператор</span>
-                                        <p class="team-accord__part">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
+                    <h1 class="section-title section-title_team">Команда</h1>
+                    <ul class="team-accord">
+                       
+                        <li class="team-accord__item">
+                            <a class="team-accord__name" href="#">Дэниэл Редклиф</a>
+                            <div class="team-accord__description">
+                                <div class="team-accord__img">
+                                    <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
                                 </div>
-                            </li>
-                            <li class="team-accord__item">
-                                <a class="team-accord__name team-accord_active" href="#">Ричард Джеймс</a>
-                                <div class="team-accord__description">
-                                    <div class="team-accord__img">
-                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
-                                    </div>
-                                    <div class="team-accord__description-text">
-                                        <span class="team-accord__post">Оператор</span>
-                                        <p class="team-accord__part">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
+                                <div class="team-accord__description-text">
+                                    <span class="team-accord__post">Оператор</span>
+                                    <p class="team-accord__part">
+                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                    </p>
                                 </div>
-                            </li>
-                            <li class="team-accord__item">
-                                <a class="team-accord__name" href="#">Джейк Финн</a>
-                                <div class="team-accord__description">
-                                    <div class="team-accord__img">
-                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
-                                    </div>
-                                    <div class="team-accord__description-text">
-                                        <span class="team-accord__post">Оператор</span>
-                                        <p class="team-accord__part">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
+                            </div>
+                        </li>
+                        
+                        <li class="team-accord__item">
+                            <a class="team-accord__name team-accord_active" href="#">Ричард Джеймс</a>
+                            <div class="team-accord__description">
+                                <div class="team-accord__img">
+                                    <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
                                 </div>
-                            </li>
-                            <li class="team-accord__item">
-                                <a class="team-accord__name" href="#">Николай Иванов</a>
-                                <div class="team-accord__description">
-                                    <div class="team-accord__img">
-                                        <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
-                                    </div>
-                                    <div class="team-accord__description-text">
-                                        <span class="team-accord__post">Оператор</span>
-                                        <p class="team-accord__part">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
+                                <div class="team-accord__description-text">
+                                    <span class="team-accord__post">Оператор</span>
+                                    <p class="team-accord__part">
+                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                    </p>
                                 </div>
-                            </li>
-                        </ul>
-                    </section>
+                            </div>
+                        </li>
+                        
+                        <li class="team-accord__item">
+                            <a class="team-accord__name" href="#">Джейк Финн</a>
+                            <div class="team-accord__description">
+                                <div class="team-accord__img">
+                                    <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
+                                </div>
+                                <div class="team-accord__description-text">
+                                    <span class="team-accord__post">Оператор</span>
+                                    <p class="team-accord__part">
+                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="team-accord__item">
+                            <a class="team-accord__name" href="#">Николай Иванов</a>
+                            <div class="team-accord__description">
+                                <div class="team-accord__img">
+                                    <img class="team-accord__pic" src="image/content/worker-face.jpg" alt="Довольная рожа">
+                                </div>
+                                <div class="team-accord__description-text">
+                                    <span class="team-accord__post">Оператор</span>
+                                    <p class="team-accord__part">
+                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
                 </div>
             </section>
 
             <section class="section section_menu" id="menu">
                 <span class="section-title section-title_menu">Меню</span>
                     <ul class="menu-accord">
+                       
                         <li class="menu-accord__item">
-                            <div class="menu-accord__title menu-accord__title_bg1">
-                                <!--menu-accord_active-->
+                            <div class="menu-accord__title menu-accord__title_bg1"><!--menu-accord_active-->
                                 <a href="" class="menu-accord__link">
                                     <span class="menu-accord__link-text">Для мясоедов</span>
                                 </a>
@@ -296,6 +325,7 @@
                                 </p>
                             </div>
                         </li>
+                        
                         <li class="menu-accord__item">
                             <div class="menu-accord__title menu-accord__title_bg2">
                                 <a href="" class="menu-accord__link">
@@ -309,6 +339,7 @@
                                 </p>
                             </div>
                         </li>
+                        
                         <li class="menu-accord__item">
                             <div class="menu-accord__title menu-accord__title_bg3">
                                 <a href="" class="menu-accord__link">
@@ -322,11 +353,13 @@
                                 </p>
                             </div>
                         </li>
+                        
                     </ul>
             </section>
 
-            <section class="section section_review" id="#review">
+            <section class="section section_review" id="review">
                 <ul class="review-list">
+                   
                     <li class="review-list__item" style="background-image: url('image/content/review-bg1.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -335,9 +368,11 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg2.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -346,9 +381,11 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg3.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -357,9 +394,11 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                                <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg4.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -369,8 +408,10 @@
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                             <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg5.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -379,9 +420,11 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg6.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -390,9 +433,11 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg7.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -401,9 +446,11 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
+                    
                     <li class="review-list__item" style="background-image: url('image/content/review-bg8.jpg')">
                         <div class="review-text">
                             <span class="review-text__author">
@@ -412,17 +459,21 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="">Подробнее</a>
+                            <a class="review-btn" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
                         </div>
                     </li>
-                </ul>
+                    
+                </ul>           
             </section>
 
             <section class="section section_order-form" id="order">
                 <div class="container">
                     <h1 class="section-title section-title_order">Закажите доставку</h1>
                     <form class="order-form" action="mysite.echo" method="post">
+                       
                         <div class="order-form__column">
+                           
                             <div class="order-form__row">
                                 <label class="order-form__half">
                                     <span class="order-form__caption">Имя</span>
@@ -460,14 +511,16 @@
                                 </label>
                             </div>
                         </div>
+                        
                         <div class="order-form__column">
+                           
                             <div class="order-form__row">
                                 <label class="order-form__full">
                                     <span class="order-form__caption">Комментарий</span>
                                     <textarea class="order-form__comment-field" name="comment-field"></textarea>
                                 </label>
                             </div>
-                            
+            
                             <div class="order-form__row order-form__row_start">
                                 <label class="order-form__radio-btn">
                                     <input class="order-form__radio-item" type="radio" name="form-pay" value="cash">
@@ -480,6 +533,7 @@
                                     <span class="order-form__caption">Оплата по карте</span>
                                 </label>
                             </div>
+                            
                             <div class="order-form__row order-form__row_start">
                                 <label class="order-form__check-btn">
                                     <input class="order-form__check" type="checkbox" name="call-check" value="dont-call">
@@ -487,10 +541,12 @@
                                     <span class="order-form__caption">Не перезванивать</span>
                                 </label>
                             </div>
+                            
                             <div class="order-form__row order-form__row_start">
                                 <button class="order-btn form-btn" type="submit">Заказать</button>
                                 <button class="clear-btn" type="reset">Очистить</button>
                             </div>
+                            
                         </div>
                     </form>
                 </div>
@@ -553,6 +609,7 @@
             </div>
         </footer>  
         
+        <!--Боковая навигация поверх всех секций (выключена в планшет. и моб. версии)-->
         <aside class="mini-map">
             <ul class="mini-map__list">
                 <li class="mini-map__item">
@@ -600,5 +657,6 @@
         
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

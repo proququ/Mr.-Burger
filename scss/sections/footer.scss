@@ -12,12 +12,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: rem(5px) 0;
+        padding: 5px 0;
+        
+        @include tablets {
+            padding-bottom: 8px;
+        }
 
         @include phones {
             flex-direction: column;
-            padding-top: rem(13px);
-            padding-bottom: rem(20px);
+            padding-top: 13px;
+            padding-bottom: 20px;
         }
     }
 }
@@ -28,13 +32,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: rem(15px);
+        margin-bottom: 15px;
     }
     
     &__address {
         display: block;
-        font-size: rem(14px);
-        line-height: rem(24px);
+        font-size: 14px;
+        line-height: 24px;
     }
     
     &__phone-block {
@@ -45,15 +49,15 @@
     
     &__phone-pic {
         display: block;
-        width: rem(12px);
-        height: rem(11px);
-        margin-right: rem(8px);
+        width: 12px;
+        height: 11px;
+        margin-right: 8px;
         fill: $orange;
     }
     
     &__phone {
-        font-size: rem(14px);
-        line-height: rem(24px);
+        font-size: 14px;
+        line-height: 24px;
         font-weight: bold;
         color: $orange;
     }

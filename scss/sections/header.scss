@@ -1,6 +1,6 @@
 .header {
     position: absolute;
-    top: rem(10px);
+    top: 10px;
     left: 0;
     z-index: 2;
     width: 100%;
@@ -22,21 +22,19 @@
 }
 
 .menu {
-    
     @include tablets {
         display: none;
     }
 
     &__list {
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
     }
     
     &__item {
-    display: inline-block;
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
         
         &:after {
             content: "";
@@ -97,8 +95,6 @@
             display: flex;
         }
     }
-
-    
 
     &__decor {
         width: 100%;

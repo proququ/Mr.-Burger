@@ -1,3 +1,4 @@
+//Общие настройки для секций
 .section {
     position: relative;
     width: 100%;
@@ -11,17 +12,28 @@
         min-height: 750px;
     }
     
+    @include phones {
+        min-height: 600px;
+    }
+    
+    @include minscreen {
+        min-height: 500px;
+    }
+    
+        //Настройки для первой секции
         &_preview {
-            padding-top: rem(10px);
+            padding-top: 10px;
             background-color: $section-prev;
             background-image: url("../image/bg/bg-section-1.jpg");
         }
-    
+        
+        //Настройки для второй секции
         &_features {
             background-color: $section-feat;
             background-image: url("../image/bg/bg-section-2.jpg");
         }
     
+        //Настройки для третьей секции
         &_product-preview {
             background-image:
                 -moz-linear-gradient(90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
@@ -31,26 +43,31 @@
                 -ms-linear-gradient(90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
         }
     
+        //Настройки для четвертой секции
         &_team {
             background-color: $section-team;
             background-image: url("../image/bg/bg-section-4.jpg")
         }
     
+        //Настройки для пятой секции
         &_menu {
             background-color: $section-menu;
             background-image: url("../image/bg/bg-section-5-1.jpg");
-            padding-top: rem(1px);
+            padding-top: 1px;
         }
     
+        //Настройки для шестой секции
         &_review {
             background-color: $section-rev;
         }
     
+        //Настройки для седьмой секции
         &_order-form {
             background-color: $section-order;
             background-image: url("../image/bg/bg-section-6.jpg");
         }
     
+        //Настройки для седьмой секции
         &_contacts {
             background-image: url("../image/bg/bg-section-7.jpg")
         }

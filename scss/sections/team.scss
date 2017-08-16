@@ -2,132 +2,116 @@
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
     width: 49%;
-    height: 100%;
+    padding-top: 70px;
+    padding-left: 80px;
     background-color: $team-bg;
 
-//    @include tablets {
-//        width: 100%;
-//    }
-}
-
-.work-team {
-	width: 70%;
-    margin: 0 auto;
-
-//    @include tablets {
-//        display: flex;
-//        flex-direction: column;
-//        align-items: center;
-//        width: 50%;
-//    }
-//
-//    @include phones {
-//        width: 70%;
-//    }
+    @include tablets {
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .team-accord {
-
-//    @include tablets {
-//        display: flex;
-//        flex-direction: column;
-//        align-items: center;
-//    }
     
     &__item {
-        margin-bottom: rem(15px);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 13px;
 
-//        @include tablets {
-//            display: flex;
-//            flex-direction: column;
-//            align-items: center;
-//            margin-bottom: rem(6px);
-//        }
+        @include tablets {
+            align-items: center;
+            margin-bottom: 3px;
+        }
     }
     
     &__name {
         display: inline-block;
-        margin-bottom: rem(5px);
         vertical-align: middle;
-        @include mix-font("Gagalin", rem(14px), normal, 2, #ffffff);
+        margin-bottom: 8px;
+        @include mix-font("Gagalin", 14px, normal, 2, #ffffff);
         text-transform: uppercase;
         text-decoration: none;
 
-//        @include tablets {
-//            font-size: rem(24px);
-//        }
+        @include tablets {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        @include minscreen {
+            font-size: 18px;
+        }
         
         &:before {
             content: "";
             display: inline-block;
-            width: rem(9px);
-            height: rem(6px);
-            margin-right: rem(8px);
             vertical-align: middle;
+            width: 9px;
+            height: 6px;
+            margin-right: 8px;
             background-image: url("../image/svg/triangle.svg#triangle");
             background-repeat: no-repeat;
-            
         }
     }
     
     &__description {
         display: none;
-        align-items: center;
-        margin-bottom: rem(20px);
+        margin-bottom: 24px;
 
-//        @include tablets {
-//            flex-direction: column;
-//            margin-bottom: 0;
-//        }
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+        }
     }
     
     &__img {
+        position: relative;
         flex-shrink: 0;
-        width: rem(100px);
-        height: rem(100px);
-        margin-left: rem(17px);
-        margin-right: rem(20px);
+        width: 100px;
+        height: 100px;
+        margin-left: 16px;
+        margin-right: 20px;
         border-radius: 50%;
         overflow: hidden;
-        position: relative;
 
-//        @include tablets {
-//            margin-bottom: rem(13px);
-//        }
+        @include tablets {
+            margin-bottom: 19px;
+        }
     }
     
     &__pic {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: 135%;
-
-    }
-    
-    &__post {
-        display: inline-block;
-        margin-bottom: rem(11px);
-        font-size: rem(14px);
-        font-weight: bold;
-        line-height: 1.7;
+        transform: translate(-50%, -50%);
     }
     
     &__description-text {
-        margin-bottom: rem(16px);
-
-//        @include tablets {
-//            display: flex;
-//            flex-direction: column;
-//            align-items: center;
-//            text-align: center;
-//            margin-bottom: rem(13px);
-//        }
+        width: 50%;
+        
+        @include tablets {
+            width: 75%;
+            text-align: center;
+        }
+    }
+    
+    &__post {
+        display: block;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.2;
     }
     
     &__part {
-        font-size: rem(14px);
+        font-size: 14px;
         line-height: 1.7;
     }
     

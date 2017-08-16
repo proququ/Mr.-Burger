@@ -5,37 +5,127 @@
 }
 
 .product-body {
-    position: relative;
     display: flex;
     width: 100%;
+    height: 480px;
     
     @include tablets {
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
+        height: auto;
+    }
+    
+    &__col {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: calc(50% - 5px);
+        
+        @include tablets {
+            width: 80%;
+            justify-content: center;
+            
+            &:first-child {
+                width: 65%;
+                padding-top: 80px;
+                margin-bottom: 18px;
+            }
+        }
+        
+        @include phones {
+            width: 100%;
+            
+            &:first-child {
+                width: 100%;
+                padding: 110px 45px 0;
+                margin-top: -15px;
+            }
+        }
+        
+        @include minscreen {
+            &:first-child {
+                padding-top: 80px;
+            }
+        }
+    }
+}
+    
+.product-img {
+    display: block;
+    width: 108%;
+    margin-left: -30px;
+    
+    @include tablets {
+        width: 110%;
+        margin-left: -20px;
+    }
+    
+    @include phones {
+        margin-left: -5px;
+    }
+}
+    
+.product-text {
+    align-self: flex-start;
+    padding-left: 15px;
+    margin-top: -8px;
+    
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    @include phones {
+        margin-top: -10px;
+    }
+    
+    &__desc {
+        font-size: 14px;
+        line-height: 1.7;
+        
+        @include minscreen {
+            font-size: 12px;
+        }
     }
 }
 
-.product-img {
-    position: relative;
-    flex-basis: 50%;
+.price-block {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 73px 0;
+    align-items: baseline;
+    margin-top: 20px;
     
     @include tablets {
-
-        padding: 75px 0 30px;
+        justify-content: center;
+        margin-top: 30px;
     }
-
-    &__pic {
-        display: block;
-        width: 110%;
-        margin-left: rem(-30px);
+    
+    @include phones {
+        margin-top: 15px;
+    }
+    
+    &__price, &__text {
+        @include mix-font("Gagalin", 30px, normal, 1, $red);
+    }
+    
+    &__price {
+        font-size: 72px;
         
-        @include tablets {
-            margin-left: 0;
-            margin-right: -10px;
+        @include phones {
+            margin-right: 3px;
+            font-size: 50px;
+        }
+    }
+    
+    &__text {
+        margin-right: 25px;
+        
+        @include phones {
+            font-size: 24px;
         }
     }
 }
@@ -46,10 +136,6 @@
     left: 0;
     display: flex;
     align-items: flex-start;
-    
-    @include tablets {
-        left: 20px;
-    }
     
     &__link {
         display: flex;
@@ -81,19 +167,19 @@
 
 .consist-list {
     display: none;
-    width: rem(270px);
-    padding: rem(20px);
-    border-radius: rem(5px);
+    width: 270px;
+    padding: 20px;
+    border-radius: 5px;
     background-color: rgba(#ffffff, 0.9);
 
     &__item {
-        flex-basis: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: rem(10px);
+        width: 100%;
+        margin-bottom: 10px;
         color: $gray;
-        font-size: rem(14px);
+        font-size: 14px;
         
         &:last-child {
             margin-bottom: 0;
@@ -101,14 +187,22 @@
     }
     
     &__pic {
-        width: rem(44px);
-        height: rem(40px);
-        margin-right: rem(25px);
+        width: 44px;
+        height: 40px;
+        margin-right: 25px;
     }
     
     &__name {
         margin-right: auto;
         font-weight: 400;
+    }
+}
+
+.consist-btn__link_active {
+    background-color: $red;
+
+    & + .consist-list {
+    display: block;
     }
 }
 
@@ -134,7 +228,6 @@
         height: 60px;
         margin-bottom: 5px;
         fill: #ffffff;
-
     }
     
     &__text {
@@ -150,52 +243,6 @@
     }
 }
 
-.consist-btn__link_active {
-    background-color: $red;
-
-    & + .consist-list {
-    display: block;
-    }
-}
-
-.product-text {
-    flex-basis: 50%;
-    padding-left: 10px;
-    
-    @include tablets {
-        flex-basis: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    &__desc {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-}
-
-.price-block {
-    display: flex;
-    align-items: flex-end;
-    margin-top: rem(20px);
-    
-    &__price, &__text {
-        @include mix-font("Gagalin", rem(30px), normal, 1, $red);
-    }
-    
-    &__price {
-        font-size: rem(72px);
-        margin-right: rem(0px);
-    }
-    
-    &__text {
-        margin-bottom: rem(5px);
-        margin-right: rem(22px);  
-    }
-}
-
 .slider-btn {
     position: absolute;
     top: 0px;
@@ -205,18 +252,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: rem(60px);
-
-
+    width: 60px;
     
     &__pic {
-        width: rem(29px);
-        height: rem(16px);
+        width: 29px;
+        height: 16px;
         fill: #ffffff;
+        
+        @include phones {
+            margin-top: -30px;
+        }
     }
     
     &_left {
-        left: rem(-56px);
+        left: -56px;
+        
+        @include tablets {
+            left: 5px;
+        }
+        
+        @include phones {
+            left: -5%;   
+        }
         
         .slider-btn__pic {
             transform: rotate(90deg);
@@ -224,7 +281,15 @@
     }
     
     &_right {
-        right: rem(-55px);
+        right: -55px;
+        
+        @include tablets {
+            right: 5px;
+        }
+        
+        @include phones {
+            right: -5%;   
+        }
         
         .slider-btn__pic {
             transform: rotate(-90deg);
