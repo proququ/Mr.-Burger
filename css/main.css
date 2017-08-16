@@ -1263,6 +1263,11 @@ p {
           -ms-flex-pack: center;
           justify-content: center;
           margin-top: 32px; } }
+      @media screen and (max-width: 400px) {
+        .order-form__row_start {
+          margin-top: 18px; }
+          .order-form__row_start:last-child {
+            margin-top: 18px; } }
     .order-form__row:last-child {
       margin-bottom: 0px; }
   .order-form__half {
@@ -1292,6 +1297,9 @@ p {
   .order-form__caption {
     display: block;
     font-size: 14px; }
+    @media screen and (max-width: 400px) {
+      .order-form__caption {
+        font-size: 12px; } }
   .order-form__field, .order-form__comment-field {
     width: 100%;
     height: 35px;
@@ -1307,7 +1315,7 @@ p {
     resize: none; }
     @media screen and (max-width: 400px) {
       .order-form__comment-field {
-        height: 60px; } }
+        height: 50px; } }
   .order-form__radio-btn, .order-form__check-btn {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1561,7 +1569,7 @@ p {
         font-size: 50px; } }
     @media screen and (max-width: 400px) {
       .section-title_order {
-        margin-top: 25px;
+        margin-top: 15px;
         font-size: 35px; } }
 
 .mini-map {

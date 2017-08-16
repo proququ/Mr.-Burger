@@ -3,5 +3,5 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
-/prepros-6.config
-/desktop.ini
+prepros-6.config
+desktop.ini

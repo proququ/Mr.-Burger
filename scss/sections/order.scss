@@ -56,6 +56,14 @@
                 justify-content: center;
                 margin-top: 32px;
             }
+            
+            @include minscreen {
+                margin-top: 18px;
+                
+                &:last-child {
+                    margin-top: 18px;
+                }
+            }
         }
         
         &:last-child {
@@ -90,6 +98,10 @@
     &__caption {
         display: block;
         font-size: 14px;
+        
+        @include minscreen {
+            font-size: 12px;
+        }
     }
     
     &__field, &__comment-field {
@@ -111,7 +123,7 @@
         resize: none;
         
         @include minscreen {
-            height: 60px;
+            height: 50px;
         }
     }
     
