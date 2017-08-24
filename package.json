@@ -1,0 +1,23 @@
+{
+  "name": "MrBurger",
+  "version": "1.0.0",
+  "description": "Учебный проект №3 - сайт фастфуда [Mr. Burger](https://proququ.github.io/MrBurger)\r =====================\r Реализация проекта происходит в рамках обучающего курса \"Веб для начинающих\", школы интернет образования \"LoftSchool\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proququ/MrBurger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proququ/MrBurger/issues"
+  },
+  "homepage": "https://github.com/proququ/MrBurger#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
+  }
+}

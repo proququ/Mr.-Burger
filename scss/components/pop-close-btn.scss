@@ -1,0 +1,47 @@
+.pop-close {
+    position: absolute;
+    top: 3.5%;
+    right: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 3px;
+        border-radius: 5px;
+        transform: rotate(45deg);
+    }
+    
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 3px;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+    }
+    
+    &:hover:after, &:hover:before{
+    background-color: $orange;
+    }
+
+}
+
+.pop-close_nav:after, .pop-close_nav:before {
+    background-color: #fff;
+}
+
+.pop-close_rev:after, .pop-close_rev:before {
+    background-color: $gray;
+}
+
+
+    

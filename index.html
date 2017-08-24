@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mr. Burger</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
     
@@ -42,10 +45,10 @@
                 <a class="order-btn" href="#">Заказать</a>
                 
                 <!--Скрытая кнопка меню - гамбургер-->
-                <a class="hamburger-menu-btn" href="#">
-                    <span class="hamburger-menu__decor"></span>
-                    <span class="hamburger-menu__decor"></span>
-                    <span class="hamburger-menu__decor"></span>
+                <a class="hamb-menu-btn" data-fancybox-menu data-src="#hamb-popup" href="#">
+                    <span class="hamb-menu__decor"></span>
+                    <span class="hamb-menu__decor"></span>
+                    <span class="hamb-menu__decor"></span>
                 </a>
                 
             </div>
@@ -130,8 +133,9 @@
             </section>
 
             <section class="section section_product-preview" id="burgers">
+                               
                 <div class="container product-wrapper">
-                   
+                    
                     <div class="product-body">
                                           
                         <!--Основной контент слайдера-->
@@ -207,7 +211,6 @@
                         </div>
                         
                         <div class="product-body__col">
-                            <!--Текст слайдера-->
                             <div class="product-text">
                                 <h1 class="section-title section-title_product">Dark Beef Burger</h1>
                                 <p class="product-text__desc">
@@ -221,7 +224,7 @@
                             </div>
                         </div> 
                     </div>
-                    
+                </div>
                     <!--Боковые кнопки слайдера-->
                     <!--Левая-->
                     <a class="slider-btn slider-btn_left" href="#">
@@ -235,8 +238,6 @@
                             <use xlink:href="image/svg/sprite.svg#arrow-scroll"></use>
                         </svg> 
                     </a>
-                    
-                </div>
             </section>
 
             <section class="section section_team" id="team">
@@ -313,7 +314,7 @@
                     <ul class="menu-accord">
                        
                         <li class="menu-accord__item">
-                            <div class="menu-accord__title menu-accord__title_bg1"><!--menu-accord_active-->
+                            <div class="menu-accord__title menu-accord__title_bg1 menu-accord_active"><!--menu-accord_active-->
                                 <a href="" class="menu-accord__link">
                                     <span class="menu-accord__link-text">Для мясоедов</span>
                                 </a>
@@ -368,8 +369,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-1" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-1" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -381,8 +382,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-2" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-2" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -394,8 +395,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-3" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-3" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -407,8 +408,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-4" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-4" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -420,8 +421,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-5" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-5" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -433,8 +434,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-6" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-6" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -446,8 +447,8 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-7" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-7" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
@@ -459,12 +460,74 @@
                             <p class="review-text__letter">
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
-                            <a class="review-btn" href="#">Подробнее</a>
-                            <a class="review-btn review-btn_more" href="#">Читать отзыв</a>
+                            <a class="review-btn" data-fancybox-rev data-src="#rev-item-8" href="#">Подробнее</a>
+                            <a class="review-btn review-btn_more" data-fancybox-rev data-src="#rev-item-8" href="#">Читать отзыв</a>
                         </div>
                     </li>
                     
-                </ul>           
+                </ul>
+                
+                <!--Попап с отзывами-->
+                <div class="review-popup">
+                    <ul class="popRev-list">
+                        <li class="popRev-item" id="rev-item-1">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-2">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-3">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-4">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-5">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-6">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-7">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                        <li class="popRev-item" id="rev-item-8">
+                            <a class="pop-close pop-close_rev" href="#"></a>
+                            <span class="popRev-item__title">Константин Спилберг</span>
+                            <p class="popRev-item__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                        </li>
+                    </ul>
+                </div>           
             </section>
 
             <section class="section section_order-form" id="order">
@@ -553,7 +616,7 @@
             </section>
 
             <section class="section section_contacts" id="contact">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33a65c3d40d99248e67c41e05d678c4252b3e2e7c84ca56fd00cb0f184c5d8c0&amp;width=100%25&amp;min-height=650&amp;lang=ru_RU&amp;scroll=false"></script>    
+                <div class="map-container" id="map"></div>
             </section>
 
         </main> 
@@ -609,6 +672,34 @@
             </div>
         </footer>  
         
+        <!--Скрытое меню для адаптива-->
+        <div class="nav-popup" id="hamb-popup">
+            <div class="logo logo_pop">
+                <img class="logo__pic" src="image/svg/logo.svg" alt="logo">
+            </div>
+            <a class="pop-close pop-close_nav" href="#"></a>
+            <ul class="nav-pop-list">
+                <li class="nav-pop-list__item">
+                    <a class="nav-pop-list__link" href="#features">Почему мы</a>
+                </li>
+                <li class="nav-pop-list__item">
+                    <a class="nav-pop-list__link" href="#burgers">Меню</a>
+                </li>
+                <li class="nav-pop-list__item">
+                    <a class="nav-pop-list__link" href="#menu">Советы</a>
+                </li>
+                <li class="nav-pop-list__item">
+                    <a class="nav-pop-list__link" href="#team">Кто мы</a>
+                </li>
+                <li class="nav-pop-list__item">
+                    <a class="nav-pop-list__link" href="#order">Свяжитесь с нами</a>
+                </li>
+                <li class="nav-pop-list__item">
+                    <a class="nav-pop-list__link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        
         <!--Боковая навигация поверх всех секций (выключена в планшет. и моб. версии)-->
         <aside class="mini-map">
             <ul class="mini-map__list">
@@ -658,5 +749,9 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/lory.min.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

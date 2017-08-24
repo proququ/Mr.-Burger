@@ -2,6 +2,7 @@
 @import "config/media";
 @import "config/var";
 @import "config/mixins";
+@import "config/animation";
 
 //Settings
 @import "settings/fonts";
@@ -17,9 +18,13 @@
 @import "sections/menu";
 @import "sections/review";
 @import "sections/order";
+@import "sections/map";
 @import "sections/footer";
 
 //Components
 @import "components/section-title";
 @import "components/mini-map";
 @import "components/social-btn";
+@import "components/menu-hamb-popup";
+@import "components/review-popup";
+@import "components/pop-close-btn";

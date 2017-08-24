@@ -198,12 +198,11 @@
     }
 }
 
-.consist-btn__link_active {
-    background-color: $red;
-
-    & + .consist-list {
+.consist-btn__link:hover + .consist-list {
     display: block;
-    }
+    animation-name: bounceInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
 }
 
 .ccal-icon {
@@ -252,7 +251,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60px;
+    width: 5.5%;
     
     &__pic {
         width: 29px;
@@ -265,14 +264,14 @@
     }
     
     &_left {
-        left: -56px;
+        left: 2%;
         
         @include tablets {
-            left: 5px;
+            left: 4%;
         }
         
         @include phones {
-            left: -5%;   
+            left: 1.5%;   
         }
         
         .slider-btn__pic {
@@ -281,18 +280,36 @@
     }
     
     &_right {
-        right: -55px;
+        right: 2%;
         
         @include tablets {
-            right: 5px;
+            right: 4%;
         }
         
         @include phones {
-            right: -5%;   
+            right: 1.5%;   
         }
         
         .slider-btn__pic {
             transform: rotate(-90deg);
         }
     } 
+}
+
+.frame {
+    width: 100%;
+    position: relative;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: inline-block;
+}
+
+js_slide {
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }

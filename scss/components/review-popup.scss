@@ -1,0 +1,33 @@
+.popRev-item {
+    display: none;
+    width: 50%;
+    border-radius: 5px;
+    
+    @include tablets {
+        width: 70%;
+    }
+    
+    @include phones {
+        width: 90%;
+    }
+    
+    &__title {
+        display: block;
+        margin-bottom: 16px;
+        @include mix-font("Gagalin", 14, normal, 2, $gray);
+        
+        @include minscreen {
+            font-size: 12px;
+        }
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 1.7;
+        color: $gray;
+        
+        @include minscreen {
+            font-size: 12px;
+        }
+    }
+}
